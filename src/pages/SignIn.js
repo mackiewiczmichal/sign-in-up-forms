@@ -56,7 +56,7 @@ export default function SignIn() {
             <input
               name='email'
               className={`form__group__input ${
-                errors.email ? 'form__group__input--error' : ''
+                errors.email && 'form__group__input--error'
               }`}
               id='email'
               placeholder='Enter email'
@@ -73,7 +73,7 @@ export default function SignIn() {
               type='password'
               name='password'
               className={`form__group__input ${
-                errors.password ? 'form__group__input--error' : ''
+                errors.password && 'form__group__input--error'
               }`}
               id='password'
               placeholder='Enter password'

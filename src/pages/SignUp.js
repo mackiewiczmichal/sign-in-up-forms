@@ -58,7 +58,7 @@ export default function SignUp() {
             <input
               name='email'
               className={`form__group__input ${
-                errors.email ? 'form__group__input--error' : ''
+                errors.email && 'form__group__input--error'
               }`}
               id='email'
               placeholder='Enter email'
@@ -74,7 +74,7 @@ export default function SignUp() {
             <input
               name='fullName'
               className={`form__group__input ${
-                errors.fullName ? 'form__group__input--error' : ''
+                errors.fullName && 'form__group__input--error'
               }`}
               id='fullName'
               placeholder='Enter Full name'
@@ -91,7 +91,7 @@ export default function SignUp() {
               type='password'
               name='password'
               className={`form__group__input ${
-                errors.password ? 'form__group__input--error' : ''
+                errors.password && 'form__group__input--error'
               }`}
               id='password'
               placeholder='Enter password'
@@ -108,7 +108,7 @@ export default function SignUp() {
               type='password'
               name='passwordConfirm'
               className={`form__group__input ${
-                errors.passwordConfirm ? 'form__group__input--error' : ''
+                errors.passwordConfirm && 'form__group__input--error'
               }`}
               id='passwordConfirm'
               placeholder='Enter password again'
