@@ -5,13 +5,14 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: "babel-eslint",
+    parser: 'babel-eslint',
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  extends: ["plugin:react/recommended", "plugin:prettier/recommended"],
+  extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
   plugins: [],
   rules: {
-    "prettier/prettier": ["error", { endOfLine: "off" }],
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'react/no-unescaped-entities': 0,
   },
 };
