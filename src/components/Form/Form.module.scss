@@ -1,0 +1,59 @@
+.formWrapper{
+    max-width:450px;
+    width: 100%;
+    background:#fff;
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+  0 -0.7px 35.6px -19px rgba(0, 0, 0, 0.056),
+  0 0.8px 71.1px -19px rgba(0, 0, 0, 0.068),
+  0 4px 89px -19px rgba(0, 0, 0, 0.075),
+  0 9px 83px -19px rgba(0, 0, 0, 0.088),
+  0 16.7px 80px -19px rgba(0, 0, 0, 0.118),
+  0 33px 80px -19px rgba(0, 0, 0, 0.28);
+}
+.formImage{
+    max-width: 100%;
+    width:200px;
+}
+.formSubmit{
+    background-image:linear-gradient(90deg, var(--base-blue) 0%, var(--base-violet) 100%);
+    background-size: 200%;
+    background-position: left;
+    padding: 1em 1.25em;
+    border:none;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    margin: auto 0;
+    width: 100%;
+    transition: 400ms all;
+    border-radius: 5px;
+    &:hover{
+        background-size: 100%;
+        cursor:pointer;
+    }
+    &:disabled{
+        background-image:linear-gradient(90deg, #b4b4b4 0%, #f4f4f4 100%);
+        color:#333;
+        cursor:pointer;
+    }
+}
+.formFooter{
+    text-align: center;
+    &Link{
+        font-weight: 700;
+        color:var(--base-blue);
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition:400ms all;
+        &:hover{
+            color: var(--base-violet);
+        }
+    }
+}

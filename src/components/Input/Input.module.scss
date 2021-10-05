@@ -1,0 +1,23 @@
+.inputGroup{
+    margin-bottom:30px;
+    position: relative;
+}
+.inputLabel{
+    font-size: 16px;
+}
+.input{
+    width:100%;
+    font-size: 24px;
+    border:unset;
+    border-bottom:2px solid #000;
+    margin-bottom: 5px;
+    outline: none;
+    transition: 500ms all;
+    &:focus{
+        border-bottom: 2px solid var(--base-blue);
+    }
+}
+.inputError{
+        color:var(--error);
+        position: absolute;
+}

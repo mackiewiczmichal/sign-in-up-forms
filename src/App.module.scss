@@ -1,0 +1,8 @@
+.appContainer{
+    background: var(--base-blue);
+    background: linear-gradient(90deg, var(--base-blue) 0%, var(--base-violet) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

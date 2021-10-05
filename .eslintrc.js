@@ -10,9 +10,10 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
-  plugins: [],
+  plugins: ['react'],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/no-unescaped-entities': 0,
+    'react/prop-types': 0,
   },
 };
